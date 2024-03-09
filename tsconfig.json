@@ -32,7 +32,8 @@
     // Output declarations
     "declaration": true,
     "declarationDir": "types",
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "stripInternal": true
   },
   "include": [
     "src"
