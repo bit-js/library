@@ -1,0 +1,19 @@
+{
+  "name": "@bit-js/_",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "latest",
+    "mitata": "latest"
+  },
+  "dependencies": {},
+  "exports": {
+    ".": "./lib/index.js",
+    "./*": "./lib/*.js"
+  },
+  "scripts": {
+    "build-test": "bun build.ts && bun test"
+  }
+}
