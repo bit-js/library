@@ -26,7 +26,6 @@
     "noImplicitAny": true,
     "noImplicitOverride": true,
     "noImplicitThis": true,
-    "noUncheckedIndexedAccess": true,
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false,
     // Output declarations
