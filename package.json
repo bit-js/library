@@ -4,9 +4,14 @@
   "main": "./lib/index.js",
   "type": "module",
   "devDependencies": {
+    "@stylistic/eslint-plugin": "latest",
     "@types/bun": "latest",
-    "typescript": "latest",
-    "mitata": "latest"
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "^7.1.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "latest",
+    "mitata": "latest",
+    "typescript": "latest"
   },
   "dependencies": {},
   "exports": {
@@ -14,6 +19,7 @@
     "./*": "./lib/*.js"
   },
   "scripts": {
-    "build-test": "bun build.ts && bun test"
+    "build-test": "bun build.ts && bun test",
+    "lint": "bun x eslint ./src"
   }
 }
