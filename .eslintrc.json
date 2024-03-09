@@ -632,7 +632,7 @@
         ],
         "@stylistic/quotes": [
             "warn",
-            "double",
+            "single",
             {
                 "avoidEscape": true
             }
