@@ -10,8 +10,7 @@ Bun.build({
     outdir: './lib',
     entrypoints: ['./src/index.ts'],
     minify: {
-        whitespace: true,
-        syntax: true
+        whitespace: true
     },
     external: Object.keys(pkg.dependencies)
 });
