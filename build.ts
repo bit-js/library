@@ -20,4 +20,4 @@ Bun.build({
 const dir = './types';
 if (existsSync(dir)) rmSync(dir, { recursive: true });
 
-$`bun x tsc`;
+await $`bun x tsc`;
