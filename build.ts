@@ -13,7 +13,7 @@ Bun.build({
         whitespace: true,
         syntax: true
     },
-    external: Object.keys(pkg.devDependencies).concat(Object.keys(pkg.dependencies))
+    external: Object.keys(pkg.dependencies)
 });
 
 // Generating types
