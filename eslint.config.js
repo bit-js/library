@@ -230,12 +230,6 @@ export default tsEslint.config({
         "@typescript-eslint/switch-exhaustiveness-check": "error",
         "@typescript-eslint/triple-slash-reference": "error",
         "@typescript-eslint/unified-signatures": "error",
-        "@typescript-eslint/array-type": [
-            "warn",
-            {
-                "default": "generic"
-            }
-        ],
         "@typescript-eslint/ban-types": [
             "warn",
             {
