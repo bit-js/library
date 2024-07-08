@@ -5,14 +5,11 @@
   "license": "MIT",
   "keywords": [],
   "type": "module",
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
-  "exports": {
-    ".": "./lib/index.js",
-    "./*": "./lib/*.js"
-  },
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "scripts": {
-    "build:test": "bun build.ts && bun test",
+    "build:test": "bun scripts/build.ts && bun test",
+    "publish": "bun scripts/publish.ts",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix"
   },
