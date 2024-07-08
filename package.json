@@ -9,7 +9,7 @@
   "types": "./index.d.ts",
   "scripts": {
     "build:test": "bun scripts/build.ts && bun test",
-    "publish": "bun scripts/publish.ts",
+    "build:publish": "bun scripts/publish.ts",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix"
   },
