@@ -512,7 +512,7 @@ export default tsEslint.config({
         ],
         "@stylistic/indent": [
             "warn",
-            4,
+            2,
             {
                 "SwitchCase": 1
             }
