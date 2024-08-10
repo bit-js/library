@@ -7,10 +7,7 @@ export default tsEslint.config({
     ignores: [
         "**/*.js",
         "**/*.d.ts",
-        "**/*.json",
-        "dist/**/*",
-        "templates/**/*",
-        "bench/**/*",
+        "lib/**/*",
         "node_modules/**/*"
     ],
 }, {
