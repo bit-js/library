@@ -1,5 +1,5 @@
 /// <reference types='bun-types' />
-import { existsSync, rmSync } from 'fs';
+import { existsSync, rmSync } from 'node:fs';
 import { exec } from './utils';
 import tsconfig from '../tsconfig.json';
 

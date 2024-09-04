@@ -1,4 +1,4 @@
-import { join } from 'path';
+import { join } from 'node:path';
 import { write, file, $ } from 'bun';
 
 export const cpToLib = (path: string) => write(join('./lib', path), file(path));
