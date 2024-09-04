@@ -27,8 +27,10 @@ for (const path of new Bun.Glob('**/*.ts').scanSync(SOURCEDIR))
   Bun.file(`${SOURCEDIR}/${path}`)
     .arrayBuffer()
     .then((buf) => transpiler.transform(buf)
-      .then((res) => res.length !== 0
-        ? Bun.write(`${OUTDIR}/${path.substring(0, path.lastIndexOf('.')) + 'js'}`, res)
-        : null
-      )
+      .then((res) => {
+        if (res.length !== 0) {
+          const pathExtStart = path.lastIndexOf('.');
+          Bun.write(`${OUTDIR}/${path.substring(0, pathExtStart === -1 ? path.length : pathExtStart) + '.js'}`, res);
+        }
+      })
     );
