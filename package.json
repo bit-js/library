@@ -1,14 +1,15 @@
 {
-  "name": "@bit-js/_",
-  "version": "1.0.0",
-  "author": "aquapi",
-  "license": "MIT",
+  "name": "example",
+  "version": "0.0.1",
+  "description": "Example package",
   "keywords": [],
+  "license": "MIT",
   "type": "module",
   "main": "./index.js",
   "types": "./index.d.ts",
   "scripts": {
     "build:test": "bun scripts/build.ts && bun test",
+    "build:bench": "bun build:test && bun scripts/bench.ts",
     "build:publish": "bun build:test && bun scripts/publish.ts",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix"
@@ -21,5 +22,6 @@
     "@types/bun": "latest",
     "mitata": "latest",
     "typescript": "latest"
-  }
+  },
+  "dependencies": {}
 }

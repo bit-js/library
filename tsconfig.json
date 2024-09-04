@@ -28,11 +28,12 @@
     "noImplicitThis": true,
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": false,
-    // Output declarations
+    // Output
     "declaration": true,
     "declarationDir": "lib",
     "emitDeclarationOnly": true,
-    "stripInternal": true
+    "stripInternal": true,
+    "extendedDiagnostics": true
   },
   "include": [
     "src"

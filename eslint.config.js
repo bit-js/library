@@ -11,7 +11,7 @@ export default tsEslint.config({
         "node_modules/**/*"
     ],
 }, {
-    files: ["**/*.ts"],
+    files: ["src/**/*.ts"],
     plugins: {
         "@typescript-eslint": tsEslint.plugin,
         "@stylistic": stylistic,
@@ -24,7 +24,6 @@ export default tsEslint.config({
             tsconfigRootDir: ".",
             project: [
                 "./tsconfig.json",
-                "./packages/*/tsconfig.json"
             ]
         }
     },
