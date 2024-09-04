@@ -16,7 +16,7 @@ Move [`package.json`](./package.json), [`README.md`](./README.md) to [`lib`](./l
 
 ### [Bench](./scripts/bench.ts)
 
-Run files in the [`bench`](./bench) directory that ends with `.bench.ts` extension.
+Run files that ends with `.bench.ts` extension.
 
 ## Package scripts
 

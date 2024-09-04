@@ -12,4 +12,3 @@ group('Example', () => {
 
 // Start the benchmark
 run();
-
